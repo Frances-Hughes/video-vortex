@@ -1,7 +1,7 @@
 import React from "react";
 // import { useState } from "react";
 // import { useNavigate } from "react-router-dom";
-import { Box, Paper, IconButton } from "@mui/material";
+import { Paper, IconButton } from "@mui/material";
 import { Search } from "@mui/icons-material";
 
 const SearchBar = () => {
