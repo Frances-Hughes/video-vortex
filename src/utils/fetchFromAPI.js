@@ -6,9 +6,6 @@ const options = {
   method: "GET",
   url: BASE_URL,
   params: {
-    relatedToVideoId: "7ghhRHRP6t4",
-    part: "id,snippet",
-    type: "video",
     maxResults: "50",
   },
   headers: {

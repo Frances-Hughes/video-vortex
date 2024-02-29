@@ -15,7 +15,6 @@ const SearchBar = () => {
         paddingLeft: 2,
         boxShadow: "none",
         mr: { sm: 5 },
-        backgroundColor: "#A00356",
       }}
     >
       <input
@@ -23,12 +22,9 @@ const SearchBar = () => {
         placeholder="Search..."
         value=""
         onChange={() => {}}
-        style={{ backgroundColor: "#A00356", border: "none", color: "#fff" }}
+        style={{ border: "none", color: "#fff" }}
       />
-      <IconButton
-        type="submit"
-        sx={{ p: "10px", color: "#fff", backgroundColor: "#A00356" }}
-      >
+      <IconButton type="submit" sx={{ p: "10px", color: "#41A5D9" }}>
         <Search />
       </IconButton>
     </Paper>
