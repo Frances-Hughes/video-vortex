@@ -21,7 +21,10 @@ const VideoCard = ({
     sx={{
       width: { xs: "100%", sm: "358px", md: "320px" },
       boxShadow: "none",
-      borderRadius: 0,
+      borderRadius: "10px",
+      ":hover": {
+        borderRadius: 0,
+      },
     }}
   >
     <Link to={`/video/${videoId || "cV2gBU6hKfY"}`}>
@@ -31,7 +34,7 @@ const VideoCard = ({
         sx={{ height: 180 }}
       />
     </Link>
-    <CardContent sx={{ backgroundColor: "#2C2C2C", height: "96px" }}>
+    <CardContent sx={{ backgroundColor: "#1981B9", height: "96px" }}>
       <Link
         to={`/video/${videoId || "cV2gBU6hKfY"}`}
         style={{ textDecoration: "none" }}
@@ -51,7 +54,7 @@ const VideoCard = ({
       >
         <Typography
           variant="subtitle2"
-          color="gray"
+          color="#262626"
           display="flex"
           alignItems="center"
         >

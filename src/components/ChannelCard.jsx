@@ -9,7 +9,7 @@ const ChannelCard = ({ channelDetail }) => (
   <Box
     sx={{
       boxShadow: "none",
-      borderRadius: "20px",
+      borderRadius: "10px",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
@@ -18,6 +18,9 @@ const ChannelCard = ({ channelDetail }) => (
       height: "326px",
       margin: "auto",
       mt: 2,
+      ":hover": {
+        borderRadius: 0,
+      },
     }}
   >
     <Link
@@ -49,10 +52,10 @@ const ChannelCard = ({ channelDetail }) => (
         />
         <Typography variant="h6" gutterBottom>
           {channelDetail?.snippet?.title}
-          <CheckCircleIcon sx={{ color: "#a3a4a4", ml: 1, fontSize: 16 }} />
+          <CheckCircleIcon sx={{ color: "#fff", ml: 1, fontSize: 16 }} />
         </Typography>
         {channelDetail?.statistics?.subscriberCount && (
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="#fff">
             {Number(
               channelDetail?.statistics?.subscriberCount
             ).toLocaleString()}{" "}
