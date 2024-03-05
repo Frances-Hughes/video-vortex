@@ -126,7 +126,7 @@ const VideoDetail = () => {
               top: "86px",
             }}
           >
-            <Videos videos={videos} direction="column" width={"100%"} />
+            <Videos videos={videos} direction="column" />
           </Box>
         </Grid>
       </Stack>
